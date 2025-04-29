@@ -1,0 +1,189 @@
+.our-products-content{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+
+
+.our-products-content .all-products{
+	scroll-margin-block-start: 110px;
+}
+
+
+
+
+.recommended_title {
+    background: var(--error);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    width: 100px;
+    padding: 10px 30px;
+    transform: rotate(45deg) translate(25% , -35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.recommended_title p{
+    color: var(--white);
+}
+
+.package_data{
+    display: flex;
+    gap: 5px;
+}
+.product{
+    position: relative;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    padding-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.product .iptv_head {
+    background: var(--primary-1);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product .iptv_head h3 {
+    color: var(--white);
+    font-size: 25px;
+}
+.product .iptv_price {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.product .iptv_price h3{
+    font-size: 30px;
+    color: var(--dark);
+}
+.product .iptv_price p {
+    font-size: 17px;
+    color: var(--grey);
+    font-weight: bold;
+    position: relative;
+}
+.product .iptv_price p:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: var(--error);
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-33deg);
+}
+.product .iptv_devices{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+} 
+.product .iptv_devices i{
+    font-size: 18px;
+    color: var(--primary-2);
+}
+.product .iptv_charactiristics {
+    padding: 30px 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.product .charactiristic {
+    display: flex;
+    gap: 5px;
+}
+.product .charactiristic p{
+    flex: 1;
+    color: var(--dark);
+}
+.product .charactiristic i {
+    font-size: 10px;
+    color: var(--white);
+    background: var(--primary-2);
+    height: 19px;
+    width: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.product a{
+    background: var(--primary-1);
+    color: var(--white);
+    height: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--NORMAL-RADIUS);
+    margin-top: 5px;
+}
+.product a i{
+    color: var(--white);
+}
+.product a:hover{
+    background: var(--primary-1-dark);
+}
+
+
+
+@media (max-width:863px) {
+    .product{
+        width: auto;
+    }
+    .product .iptv_price h3{
+        font-size: 35px;
+    }
+    .product .charactiristic p , .producta p , .product .iptv_price p {
+        font-size: 20px;
+    }
+    .product .iptv_head {
+        height: 90px;
+    }
+}
+@media (max-width:691px) {
+    .product .iptv_head h3 {
+        font-size: 25px;
+    }
+}
+@media (max-width:674px) {
+    .product .charactiristic p{
+        font-size: 17px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

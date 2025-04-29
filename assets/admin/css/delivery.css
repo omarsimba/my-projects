@@ -1,0 +1,198 @@
+.ordering_orders{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: solid 1px var(--too-grey-light);
+    color: var(--primary-1);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* ----- */
+
+
+.all_orders{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.all_orders .order {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px var(--too-grey-light);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+.all_orders .order.removed{
+    display: none;
+}
+.all_orders .order .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.all_orders .order.ordering{
+    border-style: dashed;
+}
+.all_orders .order.clicked{
+    border-color: var(--primary-1);
+}
+.all_orders .order .ordering_number {
+    padding: 2px 5px;
+    background: var(--too-grey-light);
+    border-radius: 10px;
+    color: var(--primary-1);
+    height: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.all_orders .order.has_been_ordered .ordering_number {
+    display: flex;
+}
+
+.all_orders .order .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.all_orders .order .top .order_id{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.all_orders .order .top .price{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: var(--success-light);
+    color: var(--success);
+    font-size: 11px;
+    border: solid 1px var(--success);
+}
+
+/* ---------------- */
+
+.all_orders .order .customer_free_time{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.all_orders .order .customer_free_time p , .all_orders .order .customer_free_time p a , .all_orders .order .customer_free_time i{
+    color: var(--primary-1);
+    font-size: 13px;
+}
+
+/* ---------------- */
+
+.all_orders .order .center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.all_orders .order .center .address{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.all_orders .order .center .address .top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.all_orders .order .center .address .top i, .all_orders .order .center .address .top p{
+    font-weight: bold;
+    font-size: 14px;
+}
+.all_orders .order .center .address .all_address{
+    font-size: 13px;
+}
+
+/* ------- */
+
+
+.all_orders .order .separator{
+    height: 1px;
+    width: 100%;
+    border-radius: 20px;
+    background: var(--too-grey-light);
+}
+
+
+
+/* ------- */
+
+.all_orders .order .action_btns{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.all_orders .order .action_btns button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: solid 1px;
+}
+
+.all_orders .order .action_btns button.success{
+    color: var(--success);
+}
+
+.all_orders .order .action_btns button.success:hover{
+    background: var(--success-light);
+}
+.all_orders .order .action_btns button.warning{
+    color: var(--warning);
+}
+.all_orders .order .action_btns button.warning:hover{
+    background: var(--warning-light);
+}
+.all_orders .order .action_btns button.error{
+    color: var(--error);
+}
+.all_orders .order .action_btns button.error:hover{
+    background: var(--error-light);
+}
+
+
+
+
+/* ------------------ */
+
+@media (max-width:1200px) {
+    .all_orders{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width:860px) {
+    .all_orders{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+<img class="logo-img" src="<?php echo $hostName; ?>/assets/globals/global_imgs/icons/logo.svg" alt="<?php echo $global_key ?>'s logo">

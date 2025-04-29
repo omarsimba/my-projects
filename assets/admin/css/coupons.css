@@ -1,0 +1,38 @@
+.manage_coupons_table tbody td{
+    min-height: 35px;
+}
+
+.manage_coupons_table tbody td.email-td{
+    overflow: hidden;
+}
+.manage_coupons_table tbody td.coupon_code_name , .manage_coupons_table tbody td.coupon_code_discount{
+    font-weight: bold;
+    color: var(--primary-1);
+}
+.manage_coupons_table tbody td.coupon_code_discount{
+    color: var(--primary-2);
+}
+.manage_coupons_table tbody td.member-container{
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+.manage_coupons_table tbody td.member-container .left-side{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.manage_coupons_table tbody td.action_btns button{
+    width: CALC(100%/2.5);
+    background: var(--success);
+    height: 35px;
+    border-radius: 4px;
+}
+.manage_coupons_table tbody td.action_btns button i{
+    color: var(--white);
+}
+.manage_coupons_table tbody td.action_btns button.red{
+    background: var(--error);
+}

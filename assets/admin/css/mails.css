@@ -1,0 +1,10 @@
+.review_content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.reviews_container .review .review_content p.subject-content {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--primary-1);
+}

@@ -1,0 +1,1 @@
+<p class="developer-signature"><?php echo $TRANSALTION_TEXTS["developer_text"] ?></p>

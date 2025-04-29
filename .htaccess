@@ -1,0 +1,151 @@
+# Prevent directory listing
+
+Options -Indexes
+
+#Write message
+
+ErrorDocument 403 "Hello dear , you can't enter to this directory ."
+
+
+
+###### ADMIN SECTION #########
+
+
+# Rewrite pages name
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^admin/settings/([^/]+)? assets/admin/pages/settings/$1.php  [L,QSA]
+
+
+
+# Rewrite pages name
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^admin/([^/]+)/([^/]+)? assets/admin/pages/$1/$2.php  [L,QSA]
+
+
+
+# Rewrite pages name
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^admin/([^/]+)? assets/admin/pages/$1.php  [L,QSA]
+
+
+
+
+
+# Rewrite pages name
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^admin? assets/admin/pages/index.php  [L,QSA]
+
+
+
+
+
+
+
+
+
+# Rewrite pages name 
+
+
+# Specific product 
+
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^product/([^/]+)? assets/pages/product.php?product_id=$1  [L,QSA]
+
+
+
+# Rewrite pages name 
+
+# Specific collection 
+
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^collection/([^/]+)? assets/pages/collection.php?collection_id=$1  [L,QSA]
+
+
+
+
+# Rewrite pages name 
+
+# Specific Reviews 
+
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^reviews/([^/]+)? assets/pages/reviews.php?product_id=$1  [L,QSA]
+
+
+
+
+
+# Rewrite pages name
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^p-checkout-([^/]+)? assets/pages/checkout.php?special_id=$1  [L,QSA]
+
+
+
+# Rewrite pages name
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^p-([^/]+)? assets/pages/$1.php  [L,QSA]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ErrorDocument 404 http://localhost/women_fashion/p-404

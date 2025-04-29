@@ -1,0 +1,87 @@
+.settings-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.settings-container .top{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+.settings-container .top .admin-img{
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	border: solid 1px var(--too-grey-light);
+	box-shadow: var(--box-shadow-3);
+}
+.settings-container .top .admin-img img , .settings-container .top .admin-img .edit-effect{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.settings-container .top .admin-img .edit-effect{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+/*	gap: 5px;*/
+	background: var(--alerts-background);
+	position: absolute;
+/*	top: 0;*/
+	height: fit-content;
+	padding: 10px;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+/*	opacity: 0;*/
+	pointer-events: none;
+}
+.settings-container .top .admin-img .edit-effect p , .settings-container .top .admin-img .edit-effect i{
+	color: var(--white);
+	font-size: 12px;
+}
+.settings-container .top .admin-img:hover .edit-effect{
+	opacity: 1;
+}
+
+.settings-container .top .admin-img input{
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+/*-------------------*/
+
+
+.settings-container .top .full-name{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 90px;
+}
+header a:hover{
+    color: var(--primary-3);
+}

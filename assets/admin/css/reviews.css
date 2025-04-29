@@ -1,0 +1,227 @@
+.reviews_container{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+.reviews_container .content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+.titles .select_form{
+    border: solid 1px var(--primary-1);
+    width: fit-content;
+    height: 35px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.titles .select_form i , .titles .select_form select{
+    font-size: 13px;
+    color: var(--primary-1);
+}
+
+.reviews_container .review {
+    background: var(--white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--too-grey-light);
+    gap: 20px;
+    position: relative;
+}
+.reviews_container .review .loading-effect{
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.reviews_container .review.loading .loading-effect{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1;
+}
+.reviews_container .review .loading-effect i{
+    color: var(--white);
+}
+.reviews_container .review.loading .loading-effect i{
+    animation: animeSS 1s infinite;
+}
+@keyframes animeSS {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.reviews_container .review .control_btns_container{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    z-index: 1;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+} 
+
+.reviews_container .review .control_btns_container .control_btns{
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+}
+.reviews_container .review .control_btns_container .control_btns button{
+    width: 100%;
+    height: 25px;
+}
+.reviews_container .review .control_btns_container .control_btns button:hover{
+    background: var(--too-grey-light);
+}
+
+.reviews_container .review .control_btns_container .show_control_btns:hover + .control_btns{
+    /* pointer-events: all; */
+    opacity: 1;
+    height: 60px;
+}
+
+.reviews_container .review .control_btns_container .control_btns:hover{
+    /* pointer-events: all; */
+    opacity: 1;
+    height: 60px;
+}
+
+
+
+
+
+/* -------------------- */
+
+.reviews_container .review .this_review_content {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: column;
+}
+.reviews_container .review .this_review_content .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+.reviews_container .review .this_review_content .top .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    flex: 1;
+}
+.reviews_container .review .this_review_content .top .left p{
+    font-size: 12px;
+}
+.reviews_container .review .this_review_content .top .left img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews_container .review .this_review_content .top .left h4{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+.reviews_container .review .this_review_content .top .left h4 span{
+    color: var(--success);
+    font-size: 13px;
+}
+
+.reviews_container .review .this_review_content .top .right{
+    font-weight: bold;
+    color: var(--dark);
+    background: var(--primary-2-light);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+
+/* ---------------------- */
+
+
+.reviews_container .review .review_content p{
+    font-size: 13px;
+    color: var(--grey-2);
+}
+
+
+.reviews_container .review .review_content button {
+    display: flex;
+    align-items: center;
+    padding: 2PX 10PX;
+    margin-top: 8px;
+    gap: 5px;
+    margin-left: auto;
+    width: fit-content;
+    border-radius: 20px;
+}
+.reviews_container .review .review_content button:hover{
+    background: var(--primary-2-too-light);
+}
+.reviews_container .review .review_content button p{
+    color: var(--grey);
+    font-size: 12px;
+}
+.reviews_container .review .review_content button:hover p{
+    color: var(--primary-2);
+}
+.reviews_container .review .review_content button i{
+    color: var(--primary-2);
+    font-size: 13px;
+}
+
+/* -------------------- */
+
+.reviews_container .review .control_btns{
+    display: none;
+}
+.reviews_container .review .control_btns button{
+    flex: 1;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: var(--white); */
+}
+.reviews_container .review .control_btns button.green{
+    color: var(--success);
+}
+.reviews_container .review .control_btns button.red{
+    color: var(--error);
+}
+
+
+
+
+
+
+
+

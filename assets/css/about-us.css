@@ -1,0 +1,159 @@
+.about-us{
+	margin-top: 100px;
+	
+}
+.about-us .about-us-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.about-us .left-side , .about-us .right-side{
+	width: 40%;
+	position: relative;
+}
+.about-us .right-side{
+	height: 100%;
+}
+
+
+.about-us .left-side .main-box{
+	width: 100%;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	border-radius: var(--NORMAL-RADIUS);
+}
+.about-us .left-side .main-box img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.about-us .left-side .box-1{
+	background: var(--box-backgound);
+	box-shadow: var(--box-shadow);
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+	border-radius: var(--NORMAL-RADIUS);
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	width: 300px;
+}
+.about-us .left-side .box-1 .left-side{
+	background: var(--box-backgound-light);
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--NORMAL-RADIUS);
+}
+.about-us .left-side .box-1 .right-side{
+	flex: 1;
+}
+.about-us .left-side .box-1 .right-side p.title{
+	font-weight: bold;
+}
+
+
+/*----------------------*/
+
+.about-us .left-side .box-2{
+	background: var(--box-backgound);
+	box-shadow: var(--box-shadow);
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px;
+	border-radius: var(--SMALL-RADIUS);
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+}
+.about-us .left-side .box-2 .group{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--SMALL-RADIUS);
+}
+.about-us .left-side .box-2 .icon{
+	background: blue;
+	height: 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: var(--box-backgound-light);
+	justify-content: center;
+	border-radius: var(--SMALL-RADIUS);
+}
+
+.about-us .left-side .box-2 .group .icon{
+	width: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px){
+    .about-us .left-side , .about-us .right-side{
+		width: 50%;
+	}
+}
+
+@media (max-width:896px){
+    .about-us .left-side{
+		width: 40%;
+	}
+	.about-us .right-side{
+		width: unset;
+		flex: 1;
+	}
+}
+
+@media (max-width:719px){
+    .about-us .about-us-content {
+	    flex-direction: column;
+	    gap: 40px;
+	}
+	.about-us .left-side{
+		width: 300px;
+	}
+	.about-us .right-side{
+		width: unset;
+		flex: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

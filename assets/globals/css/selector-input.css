@@ -1,0 +1,131 @@
+/*.selector-input-parent{
+	min-width: 300px;
+}*/
+
+.selector-input{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+	height: fit-content;
+}
+
+.selector-input .currenct-selector-value{
+	border: solid 1px var(--border-color-2);
+}
+.selector-input .currenct-selector-value , .selector-input .other-selector-values .other-value{
+	background: var(--box-backgound-light);
+	height: 45px;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.selector-input .currenct-selector-value .data{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	height: 100%;
+	width: 100%;
+}
+.selector-input .currenct-selector-value .data p{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.selector-input .currenct-selector-value .data p i{
+	color: var(--text-color-2);
+}
+
+.selector-input .other-selector-values{
+	background: var(--box-backgound-light);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	height: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateY(calc(100% + 10px));
+	z-index: 1;
+	box-shadow: var(--box-shadow-3);
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.selector-input .other-selector-values .other-value{
+	height: 40px;
+	border-radius: 0;
+	background: none;
+	border-bottom: solid 1px var(--border-color-2);
+}
+.selector-input .other-selector-values .other-value p{
+	font-size: 12px;
+}
+.selector-input .other-selector-values .other-value:last-child{
+	border-bottom: none;
+}
+
+.selector-input .other-selector-values .other-value:hover{
+	background: var(--too-grey-light);
+}
+
+.selector-input .other-selector-values .other-value.success p{
+	color: var(--success);
+}
+.selector-input .other-selector-values .other-value.error p{
+	color: var(--error);
+}
+
+
+
+
+/*------*/
+.selector-input.opened .currenct-selector-value{
+	border-color: var(--primary-1);
+}
+.selector-input.opened .other-selector-values{
+	height: fit-content;
+}
+.selector-input.opened .currenct-selector-value .data i#arrow-icon{
+	transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

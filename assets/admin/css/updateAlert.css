@@ -1,0 +1,238 @@
+.update-package-alert-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: var(--alerts-background);
+	backdrop-filter: var(--backdroup-filter-blur);
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+	
+}
+.update-package-alert-container.active{
+	opacity: 1;
+	pointer-events: all;
+}
+
+
+
+
+/*----------------*/
+
+.update-package-alert-container .update-package-alert-content{
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	background: var(--box-backgound-light);
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0;
+	height: fit-content;
+	max-height: 800px;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 10px;
+	box-shadow: var(--box-shadow);
+	overflow: hidden;
+}
+
+
+.update-package-alert-container .update-package-alert-loader{
+	background: var(--white);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	opacity: 0;
+	pointer-events: none;
+}
+.update-package-alert-container .update-package-alert-loader i{
+	color: var(--dark);
+}
+
+.update-package-alert-container.loading .update-package-alert-content .update-package-alert-loader{
+	opacity: 1;
+}
+.update-package-alert-container.active.loading .update-package-alert-content .update-package-alert-loader{
+	pointer-events: all;
+}
+/*---------------*/
+
+.update-package-alert-container .update-package-alert-content .alert-title , .update-package-alert-container .update-package-alert-content .alert-btn-actions{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	gap: 5px;
+	padding: 15px 10px;
+}
+.update-package-alert-container .update-package-alert-content .alert-title{
+	border-bottom: solid 1px var(--border-color-2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.update-package-alert-container .update-package-alert-content .alert-title h3{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.update-package-alert-container .update-package-alert-content .alert-title small{
+	font-size: 13px;
+	margin-top: auto;
+}
+
+.update-package-alert-container .update-package-alert-content .alert-title #total-price-holder {
+    background: var(--success-light);
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions{
+	justify-content: flex-end;
+	border-top: solid 1px var(--too-grey-light);
+}
+
+.update-package-alert-container .update-package-alert-content .alert-title #like-this-review{
+	background: var(--too-grey-light);
+	color: var(--primary-3);
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+.update-package-alert-container .update-package-alert-content .alert-title #like-this-review:hover{
+	color: var(--primary-3-dark);
+}
+
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button{
+	min-width: 100px;
+    padding: 0 10px;
+	height: 30px;
+	border-radius: 10px;
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.success{
+	background: var(--success);
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.success:hover{
+	background: var(--success-dark);
+}
+
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.error{
+	background: var(--error);
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.error:hover{
+	background: var(--error-dark);
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button p{
+	color: var(--white);
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.hide{
+	background: var(--box-backgound-2);
+    color: var(--text-color-2);
+}
+
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.loading-data{
+	pointer-events: none;
+}
+/*.update-package-alert-container .update-package-alert-content .alert-btn-actions button.loading-data i{
+	pointer-events: none;
+*/}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.success.loading-data{
+	background: var(--success-light);
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.error.loading-data{
+	background: var(--error-light);
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.success.loading-data i{
+	color: var(--success-dark);
+}
+.update-package-alert-container .update-package-alert-content .alert-btn-actions button.error.loading-data i{
+	color: var(--error-dark);
+}
+
+/*-----------------------*/
+
+.update-package-alert-container .update-package-alert-content .inputs{
+	width: 100%;
+	padding: 10px;
+	height: fit-content;
+	max-height: 400px;
+	overflow-y: auto;
+	background: #8b8b8b05;
+/*	background: #f7f6f440;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+
+.update-package-alert-container .update-package-alert-content .inputs{
+/*	background: red;*/
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+.update-package-alert-container .update-package-alert-content .inputs .user_mail{
+/*	background: green;*/
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.update-package-alert-container .update-package-alert-content .inputs .user_mail .box{
+/*	background: purple;*/
+	border-radius: 10px;
+	padding: 10px;
+}
+.update-package-alert-container .update-package-alert-content .inputs .user_mail .text{
+	background: var(--too-grey-light);
+	padding: 10px;
+}
+
+
+.update-package-alert-container .update-package-alert-content .inputs .user_mail .replay_input{
+	background: var(--too-grey-light);
+	padding: 0;
+	height: 160px;
+}
+.update-package-alert-container .update-package-alert-content .inputs .user_mail textArea{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

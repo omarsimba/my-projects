@@ -1,0 +1,144 @@
+.subscription{
+/*    margin-bottom: 100px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 0;
+}
+.subscription p#error-holder{
+    color: red;
+    width: 100%;
+
+}
+
+.subscription .subscription-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+.subscription .subscription-content .subscription-input{
+    background: var(--white);
+    box-shadow: var(--box-shadow-3);
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.subscription .subscription-content .subscription-input .input{
+    height: 100%;
+    width: 70%;
+    position: relative;
+}
+.subscription .subscription-content .subscription-input .input label{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: var(--grey);
+    pointer-events: none;
+}
+body.direction-rtl .subscription .subscription-content .subscription-input .input label{
+    left: auto;
+    right: 10px;
+}
+
+
+.subscription .subscription-content .subscription-input .input input{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+.subscription .subscription-content .subscription-input .input input:focus + label , .subscription .subscription-content .subscription-input .input input:valid + label{
+    font-size: 11px;
+    top: 20%;
+    left: 15px;
+    color: var(--primary-3);
+}
+
+.subscription .subscription-content .subscription-input .btn-container{
+    height: 81%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+body.direction-rtl .subscription .subscription-content .subscription-input .btn-container{
+    right: auto;
+    left: 5px;
+}
+
+
+.subscription .subscription-content .subscription-input .btn-container.active{
+    width: 98%;
+}
+.subscription .subscription-content .subscription-input .btn-container button{
+    background: var(--primary-3);
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    font-size: var(--text-size-NORMAL);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscription .subscription-content .subscription-input .btn-container button .btn-content i , .subscription .subscription-content .subscription-input .btn-container button #loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    pointer-events: none;
+}
+body.direction-rtl .subscription .subscription-content .subscription-input .btn-container button .btn-content i{
+    left: auto;
+    right: 50%;
+}
+.subscription .subscription-content .subscription-input .btn-container button:hover{
+    background: var(--primary-3-dark);
+}
+.subscription .subscription-content .subscription-input .btn-container button:hover .btn-content i{
+    left: 80%;
+    opacity: 1;
+}
+body.direction-rtl .subscription .subscription-content .subscription-input .btn-container button:hover .btn-content i{
+    right: 80%;
+}
+
+
+.subscription .subscription-content .subscription-input .btn-container.active button #loader{
+    opacity: 1;
+    animation: spinner 1s infinite;
+}
+
+@keyframes spinner{
+    from{
+        transform: translate(-50%,-50%) rotate(0deg) ;
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(360deg) ;
+    }
+}
+
+.subscription .subscription-content .subscription-input .btn-container.active button .btn-content{
+    opacity: 0;
+}
+

@@ -1,0 +1,113 @@
+.notifications-alert{
+/*	background: red;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+/*	display: flex;*/
+	display: none;
+
+	justify-content: center;
+/*	align-items: center;*/
+	z-index: 11;
+	background: var(--alerts-background);
+    backdrop-filter: var(--backdroup-filter-blur);
+}
+
+.notifications-alert .notifications-alert-content{
+	background: var(--white);
+	width: 90%;
+	max-width: 700px;
+	height: fit-content;
+	max-height: 800px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	overflow: hidden;
+	transform: translateY(50px);
+}
+.notifications-alert .notifications-alert-content .top{
+/*	height: 60px;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--white);
+	padding: 10px;
+}
+
+.notifications-alert .notifications-alert-content .top .left-side{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.notifications-alert .notifications-alert-content .top .right-side button{
+	background: var(--too-grey-light);
+	color: var(--grey);
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+} 
+
+.notifications-alert .notifications-alert-content .all-notifications{
+/*	background: yellow;*/
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 10px;
+	background: #8b8b8b05;
+}
+
+.notifications-alert .notifications-alert-content .all-notifications .notification{
+	
+	background: var(--too-grey-light);
+	display: flex;
+	gap: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid 1Px var(--too-grey-light);
+	position: relative;
+}
+.notifications-alert .notifications-alert-content .all-notifications .notification.new-notification{
+	background: var(--white);
+	border-color: var(--primary-1-light);
+}
+
+.notifications-alert .notifications-alert-content .all-notifications .notification .icon{
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--primary-1-too-light);
+    color: var(--primary-1);
+}
+
+.notifications-alert .notifications-alert-content .all-notifications .notification .right-side{
+	flex: 1;
+}
+.notifications-alert .notifications-alert-content .all-notifications .notification p.notification-title{
+	font-size: var(--text-size-LARG);
+	font-weight: bold;
+}
+
+.notifications-alert .notifications-alert-content .all-notifications .notification p.added_at{
+	font-size: var(--text-size-SMALL);
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
