@@ -3,7 +3,7 @@
         
         <div class="left-side">
             <div class="main-box">
-                <img src="<?php echo $GLOBAL_VARIABLES['hostName'] ?>/assets/imgs/backgrounds/background-1.webp">
+                <img src="<?php echo $GLOBAL_VARIABLES['hostName'] ?>/assets/imgs/backgrounds/background-1.jpg">
             </div>
 
             <div class="box-1">
