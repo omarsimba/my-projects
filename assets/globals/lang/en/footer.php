@@ -8,7 +8,7 @@ $footer = [
 	'ligality' => 'Ligality',
 	'get_in_touch' => 'Get in touch',
 
-	'designed_and_developer' => 'Designed and developed by Omar Nmili <a href="https://www.instagram.com/dgy._.are/">@dgy._.are</a>',
+	'designed_and_developer' => 'Designed and developed by Omar Nmili <a href="https://www.instagram.com//"></a>',
 
 ] ;
 

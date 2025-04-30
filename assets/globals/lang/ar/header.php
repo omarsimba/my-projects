@@ -5,7 +5,7 @@ $header = array('home' => 'الرئيسية' , 'collections' => 'مجموعات'
 
 
 
-$developer_text = '1.0v @dgy._.are النمودج الاولي ' ;
+$developer_text = '1.0v  النمودج الاولي ' ;
 
 
 

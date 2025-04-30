@@ -36,7 +36,7 @@ function decrypting($encryption){
 	return $decryption;
 }
 
-// $string = 'dgy._.are is the best' ;
+// $string = ' is the best' ;
 // $string = 'Fara7i889' ;
 
 
