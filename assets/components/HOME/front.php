@@ -1,9 +1,9 @@
-<div class="front home-front" >
+<div class="front home-front">
 
     <div class="front-content limited">
-        
+
         <h1><?php echo $TRANSALTION_TEXTS['home_page__front_section__title'] ?></h1>
-        <p><?php echo $TRANSALTION_TEXTS['home_page__front_section__text'] ?></p>
+        <!-- <p><?php echo $TRANSALTION_TEXTS['home_page__front_section__text'] ?></p> -->
 
         <a class="buy-now-btn" href="#all-products-container"><i class="ri-shopping-bag-line"></i> <?php echo $TRANSALTION_TEXTS['shared_content']['buy_now'] ?></a>
 
@@ -25,4 +25,3 @@
 
     </div>
 </div>
-
