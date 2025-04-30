@@ -76,7 +76,7 @@ $thisImage = $thisAdmin->image ;
                             </div>
                             <div class="full-name">
                                 <i class="ri-user-follow-line"></i>
-                                <p id="full-name-holder">Ayoub Farahi</p>
+                                <p id="full-name-holder">Omar Nmili</p>
                             </div>
                         </div>
 
