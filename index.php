@@ -47,8 +47,6 @@ $all_products->execute();
 </head>
 
 <body dir='<?php echo $HTMLDir; ?>' class="direction-<?php echo $HTMLDir; ?> transition-fade">
-    <!-- Importing Header Component  --> 
-    <?php require_once "$path/components/SHARED_COMPONENTS/developer.php"; ?>
 
     <div class="page-container-as-body container">
 
@@ -61,10 +59,6 @@ $all_products->execute();
         <?php require_once "$path/components/HOME/social_media.php"; ?>
         <?php require_once "$path/components/HOME/reviews.php"; ?>
         <?php require_once "$path/components/SHARED_COMPONENTS/footer.php"; ?>
-
-
-
-
 
 
     </div>
