@@ -3,7 +3,7 @@
 
 
 $home_page__why_choose_us_section__title = 'Why choose us';
-$home_page__why_choose_us_section__text = 'text text texts text sejzek zekj zer zel zel lzed ldb lzekdb ldfze text text texts text sejzek zekj zer zel zel lzed ldb lzekdb ldfze text text texts text sejzek';
+$home_page__why_choose_us_section__text = ' ';
 
 
 $home_page__why_choose_us_section__boxex1 = [
